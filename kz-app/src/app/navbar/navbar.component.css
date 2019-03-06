@@ -1,0 +1,43 @@
+h3{
+  margin-top: 27px;
+  margin-left: 27px;
+}
+.navbar{
+  margin-top: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  text-align: center;
+}
+
+li a:hover {
+  color: red;
+}
+
+li a.active {
+  color: white;
+  font-weight: bold;
+  background-color: #87bdd8;
+}
+
