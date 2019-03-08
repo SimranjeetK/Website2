@@ -3,15 +3,19 @@
       <img src="../../assets/logo.png" width="200" height="100" alt="">
   </nav>
   <li class="nav-item">
-    <a class="nav-link" href="#">Portrait</a>
+    <a class="nav-link" routerLink="/" routerLinkActive="!active">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Landscape</a>
+    <a class="nav-link" routerLink="/portrait" routerLinkActive="active">Portrait</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Wildlife</a>
+    <a class="nav-link" routerLink="/landscape" routerLinkActive="active">Landscape</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Events</a>
+    <a class="nav-link" routerLink="/wildlife" routerLinkActive="active">Wildlife</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/events" routerLinkActive="active">Events</a>
   </li>
 </ul>
+<router-outlet></router-outlet>

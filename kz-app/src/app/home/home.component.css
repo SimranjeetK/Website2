@@ -11,6 +11,7 @@
 }
 .cb-slideshow:after {
   content: '';
+  background: transparent url(../../assets/pattern.png) repeat top left;
 }
 .cb-slideshow li span {
   width: 100%;
@@ -44,26 +45,26 @@
   line-height: 200px;
 }
 .cb-slideshow li:nth-child(1) span {
-  background-image: url(../../assets/javvy1.jpg);
+  background-image: url(../../assets/home/1.jpg);
 }
 .cb-slideshow li:nth-child(2) span {
-  background-image: url(../../assets/javvy2.jpg);
+  background-image: url(../../assets/home/2.jpg);
   animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-  background-image: url(../../assets/javvy3.jpg);
+  background-image: url(../../assets/home/3.jpg);
   animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span {
-  background-image: url(../../assets/sunset1.jpg);
+  background-image: url(../../assets/home/4.jpg);
   animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-  background-image: url(../../assets/vegas1.jpg);
+  background-image: url(../../assets/home/5.jpg);
   animation-delay: 24s;
 }
 .cb-slideshow li:nth-child(6) span {
-  background-image: url(../../assets/vegas2.jpg);
+  background-image: url(../../assets/home/6.jpg);
   animation-delay: 30s;
 }
 
