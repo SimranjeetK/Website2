@@ -1,107 +1,101 @@
-<div class="container">
-  <ul class="photo-grid">
-    <li>
-      <a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
-        <figure>
-          <img src="../../assets/portraits/1.jpg" height="180" width="320" alt="Arc de Triomphe">
-          <figcaption><p>Arc de Triomphe</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
-        <figure>
-          <img src="../../assets/portraits/2.jpg" height="200" width="320" alt="Eiffel Tower">
-          <figcaption><p>Eiffel Tower</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
-      <figure>
-        <img src="../../assets/portraits/3.jpg" height="180" width="320" alt="Notre Dame">
-        <figcaption><p>Notre Dame</p></figcaption>
-      </figure>
-    </a>
-    </li>
-  </ul>
 
-  <ul class="photo-grid">
-    <li>
-      <a href="http://mrg.bz/mRvJfV">
-        <figure>
-          <img src="../../assets/portraits/4.jpg" height="200" width="320" alt="Arc de Triomphe">
-          <figcaption><p>Arc de Triomphe</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
-        <figure>
-          <img src="../../assets/portraits/5.jpg" height="200" width="320" alt="Eiffel Tower">
-          <figcaption><p>Eiffel Tower</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
-      <figure>
-        <img src="../../assets/portraits/6.jpg" height="180" width="320" alt="Notre Dame">
-        <figcaption><p>Notre Dame</p></figcaption>
-      </figure>
-    </a>
-    </li>
-  </ul>
-  <ul class="photo-grid">
-    <li>
-      <a href="http://mrg.bz/mRvJfV">
-        <figure>
-          <img src="../../assets/portraits/7.jpg" height="200" width="320" alt="Arc de Triomphe">
-          <figcaption><p>Arc de Triomphe</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
-        <figure>
-          <img src="../../assets/portraits/8.jpg" height="200" width="320" alt="Eiffel Tower">
-          <figcaption><p>Eiffel Tower</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
-      <figure>
-        <img src="../../assets/portraits/9.jpg" height="180" width="320" alt="Notre Dame">
-        <figcaption><p>Notre Dame</p></figcaption>
-      </figure>
-    </a>
-    </li>
-  </ul>
-  <ul class="photo-grid">
-    <li>
-      <a href="http://mrg.bz/mRvJfV">
-        <figure>
-          <img src="../../assets/portraits/10.jpg" height="200" width="320" alt="Arc de Triomphe">
-          <figcaption><p>Arc de Triomphe</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li>
-      <a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
-        <figure>
-          <img src="../../assets/portraits/11.jpg" height="200" width="320" alt="Eiffel Tower">
-          <figcaption><p>Eiffel Tower</p></figcaption>
-        </figure>
-      </a>
-    </li>
-    <li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
-      <figure>
-        <img src="../../assets/portraits/12.jpg" height="180" width="320" alt="Notre Dame">
-        <figcaption><p>Notre Dame</p></figcaption>
-      </figure>
-    </a>
-    </li>
-  </ul>
+<style>
+.gallery-block.grid-gallery{
+padding-bottom: 60px;
+padding-top: 60px;
+}
+
+.gallery-block.grid-gallery .heading{
+margin-bottom: 50px;
+text-align: center;
+}
+
+.gallery-block.grid-gallery .heading h2{
+font-weight: bold;
+font-size: 1.4rem;
+text-transform: uppercase;
+}
+
+.gallery-block.grid-gallery a:hover{
+opacity: 0.8;
+}
+
+.gallery-block.grid-gallery .item img{
+box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+transition: 0.4s;
+}
+
+.gallery-block.grid-gallery .item{
+margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+
+.gallery-block.grid-gallery .scale-on-hover:hover{
+transform: scale(1.05);
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+}
+}
+</style>
 
 
 
-</div>
-<div class="clearfix"></div>
+
+<section class="gallery-block grid-gallery">
+  <div class="container">
+    <div class="heading">
+      <h2>Grid Gallery</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 item">
+        <a data-toggle="" href="../../assets/portraits/1.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/1.jpg">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/2.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/2.jpg">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/3.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/3.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/4.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/4.jpg">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/5.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/5.jpg">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/6.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/6.jpg">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/7.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/7.jpg">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/8.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/8.jpg">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 item">
+        <a class="lightbox" href="../../assets/portraits/9.jpg">
+          <img class="img-fluid image scale-on-hover" src="../../assets/portraits/9.jpg">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+  baguetteBox.run('.grid-gallery', { animation: 'slideIn'});
+</script>

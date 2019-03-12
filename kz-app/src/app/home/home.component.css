@@ -1,17 +1,27 @@
-
+div.container {
+  text-align: justify;
+  margin: 0 0 0 25%;
+  width: 85%;
+  float: right;
+  padding: 1rem 1.5rem;
+  overflow: auto;
+  box-sizing: border-box;
+  text-indent: 1rem;
+  font-size: 1rem;
+}
 .cb-slideshow,
 .cb-slideshow:after {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0px;
-  left: 0px;
+  left: 200px;
   z-index: 0;
   list-style-type: none !important;
 }
 .cb-slideshow:after {
   content: '';
-  background: transparent url(../../assets/pattern.png) repeat top left;
+  /*background: transparent url(../../assets/pattern.png) repeat top left;*/
 }
 .cb-slideshow li span {
   width: 100%;

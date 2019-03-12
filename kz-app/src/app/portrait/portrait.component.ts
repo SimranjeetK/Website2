@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {baguetteBox} from 'baguettebox.js';
 
 @Component({
   selector: 'app-portrait',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortraitComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

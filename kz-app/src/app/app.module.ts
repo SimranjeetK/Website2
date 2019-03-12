@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandscapeComponent } from './landscape/landscape.component';
 import { WildlifeComponent } from './wildlife/wildlife.component';
 import { EventsComponent } from './events/events.component';
+import {PreloadAllModules} from "@angular/router";
+
 
 const appRoutes: Routes = [
   {path: 'portrait',
@@ -28,9 +30,9 @@ const appRoutes: Routes = [
     component: EventsComponent,
     data: {title: 'Events'}
   },
-  {path: '',
-    redirectTo: '/',
-    pathMatch: 'full'
+  {
+    path: 'home',
+    component: HomeComponent
   }
 
 ]
@@ -50,7 +52,10 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: true,
+        preloadingStrategy: PreloadAllModules
+      }// <-- debugging purposes only
+
     )
   ],
   providers: [],
