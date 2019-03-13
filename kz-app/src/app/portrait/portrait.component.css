@@ -1,0 +1,65 @@
+
+
+.my-app-custom-plain-container-with-desc {
+  text-align: justify;
+  margin: 0 0 0 25%;
+  width: 85%;
+  float: right;
+  padding: 2rem 2rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-indent: 1rem;
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  cursor: auto;
+}
+.my-app-custom-plain-container-with-desc figure {
+  height: 163px;
+  overflow: hidden;
+  position: relative;
+  width: 289px;
+}
+.my-app-custom-plain-container-with-desc figure img {
+  display: block;
+  height: auto;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  max-width: 100%;
+}
+.my-app-custom-image-with-desc:hover img {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.my-app-custom-image-with-desc:hover {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.my-app-custom-plain-container-with-desc figure figcaption {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 85%;
+  padding: 5px;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+}
+.my-app-custom-plain-container-with-desc .description {
+  font-weight: bold;
+  text-align: center;
+}
+.my-app-custom-plain-container-with-desc .my-app-custom-image-with-desc {
+  height: auto;
+  margin-right: 2px;
+  width: 200px;
+  align-self: start;
+}
+
+

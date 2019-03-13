@@ -11,7 +11,9 @@ import { LandscapeComponent } from './landscape/landscape.component';
 import { WildlifeComponent } from './wildlife/wildlife.component';
 import { EventsComponent } from './events/events.component';
 import {PreloadAllModules} from "@angular/router";
-
+import 'hammerjs';
+import 'mousetrap';
+import { GalleryModule } from '@ks89/angular-modal-gallery';
 
 const appRoutes: Routes = [
   {path: 'portrait',
@@ -50,11 +52,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    GalleryModule.forRoot(),
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true,
-        preloadingStrategy: PreloadAllModules
-      }// <-- debugging purposes only
+      appRoutes
 
     )
   ],
