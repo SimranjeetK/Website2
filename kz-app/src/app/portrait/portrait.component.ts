@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Image } from '@ks89/angular-modal-gallery';
 import {PlainGalleryConfig} from "@ks89/angular-modal-gallery";
 import {PlainGalleryStrategy} from "@ks89/angular-modal-gallery";
-import {AdvancedLayout} from "@ks89/angular-modal-gallery";
 import {GridLayout} from "@ks89/angular-modal-gallery";
+import {PreviewConfig} from "@ks89/angular-modal-gallery";
 
 @Component({
   selector: 'app-portrait',
@@ -20,6 +20,9 @@ export class PortraitComponent implements OnInit {
     strategy: PlainGalleryStrategy.GRID,
     layout: new GridLayout({ width: '200px', height: '200px' }, { length: 5, wrap: true })
   };
+  plainGalleryPreview: PreviewConfig = {
+  size: { width: '200px', height: '100px'}, visible: true
+};
 
   imagesRect: Image[] = [
     new Image(0, {

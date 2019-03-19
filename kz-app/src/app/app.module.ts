@@ -10,10 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandscapeComponent } from './landscape/landscape.component';
 import { WildlifeComponent } from './wildlife/wildlife.component';
 import { EventsComponent } from './events/events.component';
-import {PreloadAllModules} from "@angular/router";
 import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {path: 'portrait',
@@ -33,8 +33,8 @@ const appRoutes: Routes = [
     data: {title: 'Events'}
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: '',
+    component: HomeComponent,
   }
 
 ]
@@ -56,7 +56,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
 
-    )
+    ),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
